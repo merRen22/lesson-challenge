@@ -1,11 +1,11 @@
-### Code Challenge
+# Code Challenge
 
 This is a technical test build for consuming an endpoint and displaying the data as well as saving the data to a local database
 
 ![alt text](https://raw.githubusercontent.com/merRen22/lesson-challenge/main/showcase/1.png)
 ![alt text](https://raw.githubusercontent.com/merRen22/lesson-challenge/main/showcase/2.png)
 
-# Libraries used
+### Libraries used
 
 - Navigation (Fragment transitions)
 - View Binding (Bind views)
