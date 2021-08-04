@@ -1,0 +1,25 @@
+dependencies {
+
+    // desugar
+    coreLibraryDesugaring(deps.desugar)
+
+    // kotlin
+    implementation(deps.kotlin)
+
+    // coroutine
+    implementation(deps.coroutineCore)
+    implementation(deps.coroutineAndroid)
+    testImplementation(deps.coroutineTest)
+
+    // dependency injection
+    implementation(deps.dagger)
+    kapt(deps.daggerCompiler)
+    implementation(deps.daggerHilt)
+    kapt(deps.daggerHiltCompiler)
+    implementation(deps.androidHilt)
+    implementation(deps.androidHiltViewModel)
+    kapt(deps.androidHiltCompiler)
+
+    // time
+    implementation(deps.time)
+}

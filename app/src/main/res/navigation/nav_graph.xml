@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/lessonFragment">
+
+
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="com.challenge.get.lesson.LessonFragment"
+        android:label="LessonFragment" >
+        <action
+            android:id="@+id/action_lessonFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.challenge.get.summary.SummaryFragment"
+        app:moduleName="summary"
+        android:label="SummaryFragment" />
+</navigation>

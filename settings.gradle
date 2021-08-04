@@ -1,0 +1,8 @@
+include ':app'
+include ':base'
+include ':model'
+include ':data:api'
+include ':data:database'
+include ':data:repository'
+include ':dynamic:summary'
+include ':feature:lesson'

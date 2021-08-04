@@ -1,0 +1,109 @@
+project.ext {
+
+    configs = [
+            versionName      : "1.0.0",
+            versionCode      : 1,
+            packageName      : "com.challenge.get",
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.3",
+            targetSdkVersion : 30,
+            minSdkVersion    : 21,
+
+    ]
+
+    versions = [
+            // library
+            buildGradle: "7.0.0-alpha08",
+            kotlin     : "1.4.30",
+            coroutine  : "1.4.2",
+            compose    : "1.0.0-beta01",
+            lifecycle  : "2.2.0",
+            navigation : "2.3.3",
+            room       : "2.2.6",
+            dagger     : "2.33",
+            daggerHilt : "2.33-beta",
+            androidHilt: "1.0.0-alpha03",
+            retrofit   : "2.9.0",
+            okhttp     : "4.9.0"
+    ]
+
+    deps = [
+            // plugin
+            pluginBuildGradle        : "com.android.tools.build:gradle:${versions.buildGradle}",
+            pluginKotlinGradle       : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
+            pluginSafeArgs           : "androidx.navigation:navigation-safe-args-gradle-plugin:${versions.navigation}",
+            pluginDaggerHilt         : "com.google.dagger:hilt-android-gradle-plugin:${versions.daggerHilt}",
+            pluginKotlinSerialization: "org.jetbrains.kotlin:kotlin-serialization:${versions.kotlin}",
+
+            // desugar
+            desugar                  : "com.android.tools:desugar_jdk_libs:1.1.1",
+
+            // kotlin
+            kotlin                   : "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}",
+            kotlinSerialization      : "org.jetbrains.kotlin.plugin.serialization:${versions.kotlin}",
+
+            // coroutine
+            coroutineCore            : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutine}",
+            coroutineAndroid         : "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutine}",
+            coroutineTest            : "org.jetbrains.kotlinx:kotlinx-coroutines-test:${versions.coroutine}",
+
+            // androidx
+            appCompat                : "androidx.appcompat:appcompat:1.3.0-alpha01",
+            material                 : "com.google.android.material:material:1.3.0-alpha01",
+            constraintLayout         : "androidx.constraintlayout:constraintlayout:2.0.0-beta7",
+            coreKtx                  : "androidx.core:core-ktx:1.5.0-alpha01",
+            activityKtx              : "androidx.activity:activity-ktx:1.2.0-alpha06",
+            fragmentKtx              : "androidx.fragment:fragment-ktx:1.3.0-alpha06",
+
+            // compose
+            composeUi                : "androidx.compose.ui:ui:${versions.compose}",
+            composeUiTooling         : "androidx.compose.ui:ui-tooling:${versions.compose}",
+            composeCompiler          : "androidx.compose.compiler:compiler:${versions.compose}",
+            composeMaterial          : "androidx.compose.material:material:${versions.compose}",
+            composeFoundation        : "androidx.compose.foundation:foundation:${versions.compose}",
+            composeAnimation         : "androidx.compose.animation:animation:${versions.compose}",
+            composeLivedata          : "androidx.compose.runtime:runtime-livedata:${versions.compose}",
+
+            // navigation
+            navCommonKtx             : "androidx.navigation:navigation-common-ktx:${versions.navigation}",
+            navRuntimeKtx            : "androidx.navigation:navigation-runtime-ktx:${versions.navigation}",
+            navFragmentKtx           : "androidx.navigation:navigation-fragment-ktx:${versions.navigation}",
+            navUiKtx                 : "androidx.navigation:navigation-ui-ktx:${versions.navigation}",
+            navDfm                   : "androidx.navigation:navigation-dynamic-features-fragment:${versions.navigation}",
+
+            // lifecycle
+            lifecycleRuntime         : "androidx.lifecycle:lifecycle-runtime:${versions.lifecycle}",
+            lifecycleExtensions      : "androidx.lifecycle:lifecycle-extensions:${versions.lifecycle}",
+            lifecycleCompiler        : "androidx.lifecycle:lifecycle-compiler:${versions.lifecycle}",
+            viewmodelKtx             : "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle}",
+            livedataKtx              : "androidx.lifecycle:lifecycle-livedata-ktx:${versions.lifecycle}",
+
+            // dependency injection
+            dagger                   : "com.google.dagger:dagger:${versions.dagger}",
+            daggerCompiler           : "com.google.dagger:dagger-compiler:${versions.dagger}",
+            daggerHilt               : "com.google.dagger:hilt-android:${versions.daggerHilt}",
+            daggerHiltCompiler       : "com.google.dagger:hilt-android-compiler:${versions.daggerHilt}",
+            daggerHiltTesting        : "com.google.dagger:hilt-android-testing:${versions.daggerHilt}",
+            androidHilt              : "androidx.hilt:hilt-common:${versions.androidHilt}",
+            androidHiltViewModel     : "androidx.hilt:hilt-lifecycle-viewmodel:${versions.androidHilt}",
+            androidHiltCompiler      : "androidx.hilt:hilt-compiler:${versions.androidHilt}",
+
+            // network
+            retrofit                 : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+            retrofitConverter        : "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0",
+            serializationJson        : "org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1",
+            okhttp                   : "com.squareup.okhttp3:okhttp:${versions.okhttp}",
+            loggingInterceptor       : "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}",
+            mockWebServer            : "com.squareup.okhttp3:mockwebserver:${versions.okhttp}",
+
+            // storage
+            roomRuntime              : "androidx.room:room-runtime:${versions.room}",
+            roomCompiler             : "androidx.room:room-compiler:${versions.room}",
+            roomKtx                  : "androidx.room:room-ktx:${versions.room}",
+
+            // time
+            time                     : 'com.jakewharton.threetenabp:threetenabp:1.3.1'
+
+    ]
+
+}
