@@ -39,8 +39,8 @@ All the transitions for the app where made using [Navigation](https://developer.
 As the app makes usd of dynamic modules in order to test it locally you need to generate a universal version containing all the modules. The following commands allow to generate the apk 👇
 
 ```sh
-//En windows
+//Windows
 gradlew :app:packageDebugUniversalApk
-//En mac/linux
+//Mac/linux
 ./gradlew :app:packageDebugUniversalApk
 ```
